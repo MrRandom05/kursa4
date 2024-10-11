@@ -1,0 +1,16 @@
+﻿<Window x:Class="Praktika4Kurs.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Praktika4Kurs"
+        mc:Ignorable="d"
+        Title="AutoService" Height="450" Width="800" Closed="SaveDB">
+    <Window.Resources>
+        <Image x:Key="BackImage" Source="Images/back.png" />
+    </Window.Resources>
+    <Grid>
+        <Frame x:Name="MainFrame" NavigationUIVisibility="Hidden" />
+        <Button Width="50" Height="50" Content="{StaticResource BackImage}" Background="Transparent" BorderBrush="Transparent" VerticalAlignment="Bottom" HorizontalAlignment="Left" Click="Back" />
+    </Grid>
+</Window>
