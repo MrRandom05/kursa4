@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Praktika4Kurs.Entities;
+using System;
 using System.Linq;
 using System.Windows;
 using System.Windows.Controls;
@@ -30,20 +31,20 @@ namespace Praktika4Kurs.Pages
                 }
                 else
                 {
-                    var user = Navigator.db.Users.Include("Role").First(x => x.Login == Logintxt.Text);
+                    var user = Navigator.db.Users.First(x => x.Login == Logintxt.Text);
                     if (user != null)
                     {
                         if (user.Password == Passwordtxt.Password)
                         {
-                            switch (user.Role.RoleName)
+                            switch (user.Role)
                             {
-                                case "админ":
+                                case Role.Admin:
                                     Navigator.Push(new AdminPage(user));
                                     break;
-                                case "клиент":
+                                case Role.Client:
                                     Navigator.Push(new ClientPage(user));
                                     break;
-                                case "работник":
+                                case Role.Worker:
                                     Navigator.Push(new WorkerPage(user));
                                     break;
                             }

@@ -9,11 +9,10 @@ namespace Praktika4Kurs.Entities
     public class DetailsFromOrder
     {
         public int DetailsFromOrderId { get; set; }
+        public int Count { get; set; }
         public Detail Detail { get; set; }
         public DetailsOrder Order { get; set; }
-        public User Creator { get; set; }
         public int DetailDetailId { get; set; }
         public int OrderDetailsOrderId { get; set; }
-        public int CreatorUserId { get; set; }
     }
 }

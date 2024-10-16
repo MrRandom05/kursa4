@@ -10,6 +10,5 @@ namespace Praktika4Kurs.Entities
     {
         public int DetailId { get; set; }
         public string DetailName { get; set; }
-        public int Count { get; set; }
     }
 }

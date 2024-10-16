@@ -3,20 +3,12 @@
   "WorkspaceRootPath": "E:\\Kuzmin\\Praktika4Kurs\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{BAE477F8-DD2A-454B-8084-BE0B3D72C328}|Praktika4Kurs.csproj|e:\\kuzmin\\praktika4kurs\\pages\\adminpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{BAE477F8-DD2A-454B-8084-BE0B3D72C328}|Praktika4Kurs.csproj|solutionrelative:pages\\adminpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BAE477F8-DD2A-454B-8084-BE0B3D72C328}|Praktika4Kurs.csproj|e:\\kuzmin\\praktika4kurs\\pages\\adminpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{BAE477F8-DD2A-454B-8084-BE0B3D72C328}|Praktika4Kurs.csproj|E:\\Kuzmin\\Praktika4Kurs\\pages\\adminpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BAE477F8-DD2A-454B-8084-BE0B3D72C328}|Praktika4Kurs.csproj|solutionrelative:pages\\adminpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BAE477F8-DD2A-454B-8084-BE0B3D72C328}|Praktika4Kurs.csproj|e:\\kuzmin\\praktika4kurs\\entities\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BAE477F8-DD2A-454B-8084-BE0B3D72C328}|Praktika4Kurs.csproj|solutionrelative:entities\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BAE477F8-DD2A-454B-8084-BE0B3D72C328}|Praktika4Kurs.csproj|e:\\kuzmin\\praktika4kurs\\appcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BAE477F8-DD2A-454B-8084-BE0B3D72C328}|Praktika4Kurs.csproj|solutionrelative:appcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BAE477F8-DD2A-454B-8084-BE0B3D72C328}|Praktika4Kurs.csproj|e:\\kuzmin\\praktika4kurs\\pages\\adminpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{BAE477F8-DD2A-454B-8084-BE0B3D72C328}|Praktika4Kurs.csproj|solutionrelative:pages\\adminpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,7 +18,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 266,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -38,61 +30,35 @@
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
-            },
-            {
-              "$type": "Bookmark",
               "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Role.cs",
-              "DocumentMoniker": "E:\\Kuzmin\\Praktika4Kurs\\Entities\\Role.cs",
-              "RelativeDocumentMoniker": "Entities\\Role.cs",
-              "ToolTip": "E:\\Kuzmin\\Praktika4Kurs\\Entities\\Role.cs",
-              "RelativeToolTip": "Entities\\Role.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAmAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-11T11:04:27.176Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "AdminPage.xaml",
-              "DocumentMoniker": "E:\\Kuzmin\\Praktika4Kurs\\Pages\\AdminPage.xaml",
-              "RelativeDocumentMoniker": "Pages\\AdminPage.xaml",
-              "ToolTip": "E:\\Kuzmin\\Praktika4Kurs\\Pages\\AdminPage.xaml*",
-              "RelativeToolTip": "Pages\\AdminPage.xaml*",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-10-11T09:57:13.639Z",
+              "Title": "AdminPage.xaml.cs",
+              "DocumentMoniker": "E:\\Kuzmin\\Praktika4Kurs\\Pages\\AdminPage.xaml.cs",
+              "RelativeDocumentMoniker": "Pages\\AdminPage.xaml.cs",
+              "ToolTip": "E:\\Kuzmin\\Praktika4Kurs\\Pages\\AdminPage.xaml.cs*",
+              "RelativeToolTip": "Pages\\AdminPage.xaml.cs*",
+              "ViewState": "AgIAAJgAAAAAAAAAAAAYwLUAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-16T09:50:34.796Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "AdminPage.xaml.cs",
-              "DocumentMoniker": "E:\\Kuzmin\\Praktika4Kurs\\Pages\\AdminPage.xaml.cs",
-              "RelativeDocumentMoniker": "Pages\\AdminPage.xaml.cs",
-              "ToolTip": "E:\\Kuzmin\\Praktika4Kurs\\Pages\\AdminPage.xaml.cs",
-              "RelativeToolTip": "Pages\\AdminPage.xaml.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAACYAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-11T09:57:15.687Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "AppContext.cs",
-              "DocumentMoniker": "E:\\Kuzmin\\Praktika4Kurs\\AppContext.cs",
-              "RelativeDocumentMoniker": "AppContext.cs",
-              "ToolTip": "E:\\Kuzmin\\Praktika4Kurs\\AppContext.cs",
-              "RelativeToolTip": "AppContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAA0AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-11T08:08:16.314Z",
+              "Title": "AdminPage.xaml",
+              "DocumentMoniker": "E:\\Kuzmin\\Praktika4Kurs\\Pages\\AdminPage.xaml",
+              "RelativeDocumentMoniker": "Pages\\AdminPage.xaml",
+              "ToolTip": "E:\\Kuzmin\\Praktika4Kurs\\Pages\\AdminPage.xaml",
+              "RelativeToolTip": "Pages\\AdminPage.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-10-11T09:57:13.639Z",
               "EditorCaption": ""
             }
           ]

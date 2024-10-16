@@ -14,23 +14,15 @@ namespace Praktika4Kurs
         {
             if (Database.CreateIfNotExists())
             {
-                Roles.AddRange(new Role[]
-                {
-                    Role.Of("админ"),
-                    Role.Of("клиент"),
-                    Role.Of("работник")
-                });
-                SaveChanges();
                 Users.AddRange(new User[]
                 {
-                    User.Of("1", "1", Roles.First())
+                    User.Of("1", "1", Role.Admin)
                 });
                 SaveChanges();
             }
         }
 
         public DbSet<User> Users { get; set; }
-        public DbSet<Role> Roles { get; set; }
         public DbSet<Detail> Details { get; set; }
         public DbSet<DetailsFromOrder> DetailsFromOrders { get; set; }
         public DbSet<DetailsOrder> DetailsOrders { get; set; }

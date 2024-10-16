@@ -42,10 +42,16 @@ namespace Praktika4Kurs.Pages
                     }
                     else
                     {
-                        var role = Navigator.db.Roles.First(x => x.RoleName == "клиент");
-                        Navigator.db.Users.Add(User.Of(Logintxt.Text, Passwordtxt.Password, role));
-                        Navigator.db.SaveChanges();
-                        MessageBox.Show("Пользователь зарегестрирован");
+                        if (Navigator.db.Users.Where(x => x.Login == Logintxt.Text).Any())
+                        {
+                            MessageBox.Show("Логин занят");
+                        }
+                        else
+                        {
+                            Navigator.db.Users.Add(User.Of(Logintxt.Text, Passwordtxt.Password, Role.Client));
+                            Navigator.db.SaveChanges();
+                            MessageBox.Show("Пользователь зарегестрирован");
+                        }
                     }
                 }
             }

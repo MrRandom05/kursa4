@@ -7,20 +7,10 @@ using System.Threading.Tasks;
 
 namespace Praktika4Kurs.Entities
 {
-    public class Role
+    public enum Role
     {
-        public int RoleId { get; set; }
-        public string RoleName { get; set; }
-
-        public static Role Of(string name) => new Role { RoleName = name };
-        [NotMapped]
-        public List<Role> Roles
-        {
-            get
-            {
-                var roles = Navigator.db.Roles.ToList();
-                return roles;
-            }
-        }
+        Admin,
+        Client,
+        Worker
     }
 }

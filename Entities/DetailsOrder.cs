@@ -10,5 +10,7 @@ namespace Praktika4Kurs.Entities
     {
         public int DetailsOrderId { get; set; }
         public string OrderTitle { get; set; }
+        public User Creator { get; set; }
+        public int CreatorUserId { get; set; }
     }
 }

@@ -24,8 +24,8 @@
                         <RowDefinition Height="4*" />
                         <RowDefinition Height="1*" />
                     </Grid.RowDefinitions>
-                    <DataGrid Grid.Row="1" Grid.Column="2" x:Name="UsersDG" AutoGenerateColumns="False" Loaded="LoadUsers">
-                        <DataGrid.Columns>
+                    <DataGrid Grid.Row="1" Grid.Column="2" x:Name="UsersDG" Loaded="LoadUsers" AutoGeneratingColumn="OnUsersDGColumnsGenerating" SelectionMode="Extended">
+                        <!--<DataGrid.Columns>
                             <DataGridTextColumn Binding="{Binding Login}" Header="Логин" Width="100" />
                             <DataGridComboBoxColumn SelectedValueBinding="{Binding RoleRoleId}" SelectedValuePath="RoleId" DisplayMemberPath="RoleName" Header="Роль" Width="100" >
                                 <DataGridComboBoxColumn.ElementStyle>
@@ -39,10 +39,86 @@
                                     </Style>
                                 </DataGridComboBoxColumn.EditingElementStyle>
                             </DataGridComboBoxColumn>
-                        </DataGrid.Columns>
+                        </DataGrid.Columns>-->
                     </DataGrid>
                     <Menu Height="20" VerticalAlignment="Top" Grid.ColumnSpan="4">
                         <MenuItem Header="Сохранить" Click="Save" FontSize="14"/>
+                        <MenuItem Header="Удалить" Click="DeleteUsers" FontSize="14"/>
+                    </Menu>
+                </Grid>
+            </TabItem.Content>
+        </TabItem>
+        <TabItem>
+            <TabItem.Header>
+                <Label Content="Запчасти" FontSize="18" />
+            </TabItem.Header>
+            <TabItem.Content>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="1*" />
+                        <ColumnDefinition Width="1*" />
+                        <ColumnDefinition Width="2*" />
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="1*" />
+                        <RowDefinition Height="4*" />
+                        <RowDefinition Height="1*" />
+                    </Grid.RowDefinitions>
+                    <DataGrid Grid.Row="1" Grid.Column="2" x:Name="DetailsDG" Loaded="LoadDetails" AutoGeneratingColumn="OnDetailsDGColumnsGenerating" SelectionMode="Extended">
+                    </DataGrid>
+                    <Menu Height="20" VerticalAlignment="Top" Grid.ColumnSpan="4">
+                        <MenuItem Header="Сохранить" Click="Save" FontSize="14"/>
+                        <MenuItem Header="Удалить" Click="DeleteDetails" FontSize="14"/>
+                    </Menu>
+                </Grid>
+            </TabItem.Content>
+        </TabItem>
+        <TabItem>
+            <TabItem.Header>
+                <Label Content="Машины" FontSize="18" />
+            </TabItem.Header>
+            <TabItem.Content>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="1*" />
+                        <ColumnDefinition Width="1*" />
+                        <ColumnDefinition Width="2*" />
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="1*" />
+                        <RowDefinition Height="4*" />
+                        <RowDefinition Height="1*" />
+                    </Grid.RowDefinitions>
+                    <DataGrid Grid.Row="1" Grid.Column="2" x:Name="CarsDG" Loaded="LoadCars" AutoGeneratingColumn="OnCarsDGColumnsGenerating" SelectionMode="Extended">
+                    </DataGrid>
+                    <Menu Height="20" VerticalAlignment="Top" Grid.ColumnSpan="4">
+                        <MenuItem Header="Сохранить" Click="Save" FontSize="14"/>
+                        <MenuItem Header="Удалить" Click="DeleteCars" FontSize="14"/>
+                    </Menu>
+                </Grid>
+            </TabItem.Content>
+        </TabItem>
+        <TabItem>
+            <TabItem.Header>
+                <Label Content="Услуги" FontSize="18" />
+            </TabItem.Header>
+            <TabItem.Content>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="1*" />
+                        <ColumnDefinition Width="1*" />
+                        <ColumnDefinition Width="2*" />
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="1*" />
+                        <RowDefinition Height="4*" />
+                        <RowDefinition Height="1*" />
+                    </Grid.RowDefinitions>
+                    <DataGrid Grid.Row="1" Grid.Column="2" x:Name="ServiceDG" Loaded="LoadServices" AutoGeneratingColumn="OnServiceDGColumnsGenerating" SelectionMode="Extended">
+                    </DataGrid>
+                    <Menu Height="20" VerticalAlignment="Top" Grid.ColumnSpan="4">
+                        <MenuItem Header="Сохранить" Click="Save" FontSize="14"/>
+                        <MenuItem Header="Удалить" Click="DeleteServices" FontSize="14"/>
                     </Menu>
                 </Grid>
             </TabItem.Content>
