@@ -217,5 +217,59 @@ namespace Praktika4Kurs.Pages
             RemoveServices();
             MessageBox.Show("Записи успешно удалены");
         }
+
+        private void LoadOrders(object sender, RoutedEventArgs e)
+        {
+
+            try
+            {
+                Navigator.db.DetailsOrders.Load();
+                var res = Navigator.db.DetailsOrders.Local.ToBindingList();
+                OrdersDG.ItemsSource = res;
+            }
+            catch (Exception ex) { MessageBox.Show(ex.Message); }
+        }
+
+        private void OnOrdersDGColumnsGenerating(object sender, DataGridAutoGeneratingColumnEventArgs e)
+        {
+            PropertyDescriptor propertyDescriptor = (PropertyDescriptor)e.PropertyDescriptor;
+            e.Column.Header = propertyDescriptor.DisplayName;
+            if (propertyDescriptor.DisplayName == "DetailsOrderId" || propertyDescriptor.DisplayName == "Creator" || propertyDescriptor.DisplayName == "OrderDetails")
+            {
+                e.Cancel = true;
+            }
+        }
+
+        private void RemoveOrders()
+        {
+            try
+            {
+                Navigator.db.DetailsOrders.Remove(OrdersDG.SelectedItems[0] as DetailsOrder);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void DeleteOrders(object sender, RoutedEventArgs e)
+        {
+            RemoveOrders();
+        }
+
+        private void ViewOrderDetails(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                if (OrdersDG.SelectedIndex == -1)
+                {
+                    MessageBox.Show("Нужно выбрать заказ для просмотра");
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
     }
 }

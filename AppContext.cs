@@ -10,7 +10,8 @@ namespace Praktika4Kurs
 {
     public class AppContext : DbContext
     {
-        public AppContext() : base("Server=DESKTOP-VNNK9U7\\SQLEXPRESS;Initial Catalog=AutoServiceKuzmin;Trusted_Connection=True;")
+        // home: (localdb)\MSSqlLocalDb     college: DESKTOP-VNNK9U7\\SQLEXPRESS
+        public AppContext() : base("Server=(localdb)\\MSSqlLocalDb;Initial Catalog=AutoServiceKuzmin;Trusted_Connection=True;")
         {
             if (Database.CreateIfNotExists())
             {

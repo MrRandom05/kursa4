@@ -11,8 +11,6 @@ namespace Praktika4Kurs.Entities
         public int DetailsFromOrderId { get; set; }
         public int Count { get; set; }
         public Detail Detail { get; set; }
-        public DetailsOrder Order { get; set; }
         public int DetailDetailId { get; set; }
-        public int OrderDetailsOrderId { get; set; }
     }
 }
