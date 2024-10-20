@@ -14,5 +14,21 @@ namespace Praktika4Kurs.Entities
         public User Creator { get; set; }
         public int CreatorUserId { get; set; }
         public List<DetailsFromOrder> OrderDetails { get; set; }
+        [NotMapped]
+        public string Details
+        {
+            get
+            {
+                string res = "";
+                var order = Navigator.db.DetailsOrders.Include("OrderDetails").First(x => x.DetailsOrderId == DetailsOrderId);
+                foreach (var item in order.OrderDetails)
+                {
+                    if (!string.IsNullOrEmpty(res)) res += "\n";
+                    res += $"{item.Detail.DetailName} x{item.Count}";
+                }
+
+                return res;
+            }
+        }
     }
 }

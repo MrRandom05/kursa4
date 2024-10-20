@@ -8,7 +8,55 @@
       d:DesignHeight="450" d:DesignWidth="800"
       Title="ClientPage">
 
-    <Grid>
-        
-    </Grid>
+    <TabControl>
+        <TabItem>
+            <TabItem.Header>
+                <Label Content="Машины" FontSize="18" />
+            </TabItem.Header>
+            <TabItem.Content>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="1*" />
+                        <ColumnDefinition Width="1*" />
+                        <ColumnDefinition Width="2*" />
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="1*" />
+                        <RowDefinition Height="4*" />
+                        <RowDefinition Height="1*" />
+                    </Grid.RowDefinitions>
+                    <DataGrid Grid.Row="1" Grid.Column="2" x:Name="CarsDG" Loaded="LoadCars" AutoGeneratingColumn="OnCarsDGColumnsGenerating" IsReadOnly="True" SelectionMode="Extended">
+                    </DataGrid>
+                    <Menu Height="20" VerticalAlignment="Top" Grid.ColumnSpan="4">
+                        <MenuItem Header="Удалить" Click="DeleteCars" FontSize="14"/>
+                        <MenuItem Header="Добавить" Click="AddCars" FontSize="14"/>
+                    </Menu>
+                </Grid>
+            </TabItem.Content>
+        </TabItem>
+        <TabItem>
+            <TabItem.Header>
+                <Label Content="Услуги" FontSize="18" />
+            </TabItem.Header>
+            <TabItem.Content>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="1*" />
+                        <ColumnDefinition Width="1*" />
+                        <ColumnDefinition Width="2*" />
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="1*" />
+                        <RowDefinition Height="4*" />
+                        <RowDefinition Height="1*" />
+                    </Grid.RowDefinitions>
+                    <DataGrid Grid.Row="1" Grid.Column="2" x:Name="ServiceDG" Loaded="LoadServices" AutoGeneratingColumn="OnServiceDGColumnsGenerating" IsReadOnly="True" SelectionMode="Single">
+                    </DataGrid>
+                    <Menu Height="20" VerticalAlignment="Top" Grid.ColumnSpan="4">
+                        <MenuItem Header="Выбрать" Click="ChooseService" FontSize="14"/>
+                    </Menu>
+                </Grid>
+            </TabItem.Content>
+        </TabItem>
+    </TabControl>
 </Page>

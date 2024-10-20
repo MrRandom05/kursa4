@@ -43,7 +43,11 @@ namespace Praktika4Kurs.Pages
 
         private void Save(object sender, RoutedEventArgs e)
         {
-            Navigator.db.SaveChanges();
+            try
+            {
+                Navigator.db.SaveChanges();
+            }
+            catch (Exception ex) { MessageBox.Show(ex.Message); }
         }
 
         private void OnUsersDGColumnsGenerating(object sender, DataGridAutoGeneratingColumnEventArgs e)
@@ -67,6 +71,11 @@ namespace Praktika4Kurs.Pages
                         Navigator.db.Users.Remove(UsersDG.SelectedItems[0] as User);
                     }
                     Navigator.db.SaveChanges();
+                    MessageBox.Show("Записи успешно удалены");
+                }
+                else
+                {
+                    MessageBox.Show("Выберете записи для удаления");
                 }
             }
             catch (Exception ex)
@@ -78,7 +87,6 @@ namespace Praktika4Kurs.Pages
         private void DeleteUsers(object sender, RoutedEventArgs e)
         {
             RemoveUsers();
-            MessageBox.Show("Записи успешно удалены");
         }
 
         private void OnDetailsDGColumnsGenerating(object sender, DataGridAutoGeneratingColumnEventArgs e)
@@ -112,6 +120,11 @@ namespace Praktika4Kurs.Pages
                         Navigator.db.Details.Remove(DetailsDG.SelectedItems[0] as Detail);
                     }
                     Navigator.db.SaveChanges();
+                    MessageBox.Show("Записи успешно удалены");
+                }
+                else
+                {
+                    MessageBox.Show("Выберете записи для удаления");
                 }
             }
             catch (Exception ex)
@@ -123,7 +136,6 @@ namespace Praktika4Kurs.Pages
         private void DeleteDetails(object sender, RoutedEventArgs e)
         {
             RemoveDetails();
-            MessageBox.Show("Записи успешно удалены");
         }
 
         private void LoadCars(object sender, RoutedEventArgs e)
@@ -159,6 +171,11 @@ namespace Praktika4Kurs.Pages
                         Navigator.db.Cars.Remove(CarsDG.SelectedItems[0] as Car);
                     }
                     Navigator.db.SaveChanges();
+                    MessageBox.Show("Записи успешно удалены");
+                }
+                else
+                {
+                    MessageBox.Show("Выберете записи для удаления");
                 }
             }
             catch (Exception ex)
@@ -170,7 +187,6 @@ namespace Praktika4Kurs.Pages
         private void DeleteCars(object sender, RoutedEventArgs e)
         {
             RemoveCars();
-            MessageBox.Show("Записи успешно удалены");
         }
 
         private void LoadServices(object sender, RoutedEventArgs e)
@@ -204,6 +220,11 @@ namespace Praktika4Kurs.Pages
                         Navigator.db.ServiceList.Remove(ServiceDG.SelectedItems[0] as ServiceList);
                     }
                     Navigator.db.SaveChanges();
+                    MessageBox.Show("Записи успешно удалены");
+                }
+                else
+                {
+                    MessageBox.Show("Выберете записи для удаления");
                 }
             }
             catch (Exception ex)
@@ -215,7 +236,6 @@ namespace Praktika4Kurs.Pages
         private void DeleteServices(object sender, RoutedEventArgs e)
         {
             RemoveServices();
-            MessageBox.Show("Записи успешно удалены");
         }
 
         private void LoadOrders(object sender, RoutedEventArgs e)
@@ -244,7 +264,17 @@ namespace Praktika4Kurs.Pages
         {
             try
             {
-                Navigator.db.DetailsOrders.Remove(OrdersDG.SelectedItems[0] as DetailsOrder);
+                if (OrdersDG.SelectedIndex != -1)
+                {
+                    Navigator.db.DetailsFromOrders.RemoveRange((OrdersDG.SelectedItems[0] as DetailsOrder).OrderDetails);
+                    Navigator.db.DetailsOrders.Remove(OrdersDG.SelectedItems[0] as DetailsOrder);
+                    Navigator.db.SaveChanges();
+                    MessageBox.Show("Записи успешно удалены");
+                }
+                else
+                {
+                    MessageBox.Show("Выберете записи для удаления");
+                }
             }
             catch (Exception ex)
             {
@@ -257,13 +287,44 @@ namespace Praktika4Kurs.Pages
             RemoveOrders();
         }
 
-        private void ViewOrderDetails(object sender, RoutedEventArgs e)
+        private void LoadClientService(object sender, RoutedEventArgs e)
         {
             try
             {
-                if (OrdersDG.SelectedIndex == -1)
+                Navigator.db.clientsServices.Load();
+                var res = Navigator.db.clientsServices.Local.ToBindingList();
+                ClientServiceDG.ItemsSource = res;
+            }
+            catch (Exception ex) { MessageBox.Show(ex.Message); }
+        }
+
+        private void OnClientServiceDGColumnsGenerating(object sender, DataGridAutoGeneratingColumnEventArgs e)
+        {
+            PropertyDescriptor propertyDescriptor = (PropertyDescriptor)e.PropertyDescriptor;
+            e.Column.Header = propertyDescriptor.DisplayName;
+            if (propertyDescriptor.DisplayName == "ClientsServiceId" || propertyDescriptor.DisplayName == "ClientCar" || propertyDescriptor.DisplayName == "Service")
+            {
+                e.Cancel = true;
+            }
+        }
+
+        private void DeleteClientService(object sender, RoutedEventArgs e)
+        {
+
+        }
+        private void RemoveClientServices()
+        {
+            try
+            {
+                if (OrdersDG.SelectedIndex != -1)
                 {
-                    MessageBox.Show("Нужно выбрать заказ для просмотра");
+                    Navigator.db.clientsServices.Remove(ClientServiceDG.SelectedItems[0] as ClientsService);
+                    Navigator.db.SaveChanges();
+                    MessageBox.Show("Записи успешно удалены");
+                }
+                else
+                {
+                    MessageBox.Show("Выберете записи для удаления");
                 }
             }
             catch (Exception ex)

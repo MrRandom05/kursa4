@@ -1,0 +1,20 @@
+﻿<Window x:Class="Praktika4Kurs.Windows.CreateCarWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Praktika4Kurs.Windows"
+        mc:Ignorable="d"
+        Title="CreateCarWindow" Height="300" Width="200">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <StackPanel HorizontalAlignment="Center" Grid.Row="0">
+            <Label Content="Car Number" FontSize="14" />
+            <TextBox FontSize="16" Width="150" Height="30" x:Name="Numtxt" />
+        </StackPanel>
+        <Button Content="Add" Width="120" Height="30" FontSize="16" Grid.Row="1" Click="AddCar" />
+    </Grid>
+</Window>

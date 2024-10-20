@@ -13,5 +13,9 @@ namespace Praktika4Kurs.Entities
         public int OwnerUserId { get; set; }
         public User Owner { get; set; }
 
+        public static Car Of(string number, int ownerId)
+        {
+            return new Car() { CarNumber = number, OwnerUserId = ownerId };
+        }
     }
 }

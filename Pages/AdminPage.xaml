@@ -144,7 +144,31 @@
                     <Menu Height="20" VerticalAlignment="Top" Grid.ColumnSpan="4">
                         <MenuItem Header="Сохранить" Click="Save" FontSize="14"/>
                         <MenuItem Header="Удалить" Click="DeleteOrders" FontSize="14"/>
-                        <MenuItem Header="Открыть" Click="ViewOrderDetails" FontSize="14"/>
+                    </Menu>
+                </Grid>
+            </TabItem.Content>
+        </TabItem>
+        <TabItem>
+            <TabItem.Header>
+                <Label Content="Оказываемые услуги" FontSize="18" />
+            </TabItem.Header>
+            <TabItem.Content>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="1*" />
+                        <ColumnDefinition Width="1*" />
+                        <ColumnDefinition Width="2*" />
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="1*" />
+                        <RowDefinition Height="4*" />
+                        <RowDefinition Height="1*" />
+                    </Grid.RowDefinitions>
+                    <DataGrid Grid.Row="1" Grid.Column="2" x:Name="ClientServiceDG" Loaded="LoadClientService" AutoGeneratingColumn="OnClientServiceDGColumnsGenerating" SelectionMode="Single">
+                    </DataGrid>
+                    <Menu Height="20" VerticalAlignment="Top" Grid.ColumnSpan="4">
+                        <MenuItem Header="Сохранить" Click="Save" FontSize="14"/>
+                        <MenuItem Header="Удалить" Click="DeleteClientService" FontSize="14"/>
                     </Menu>
                 </Grid>
             </TabItem.Content>
