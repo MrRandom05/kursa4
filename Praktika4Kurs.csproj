@@ -71,6 +71,12 @@
     <Compile Include="Windows\CreateCarWindow.xaml.cs">
       <DependentUpon>CreateCarWindow.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Windows\CreateClientServiceWindow.xaml.cs">
+      <DependentUpon>CreateClientServiceWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\CreateOrderWindow.xaml.cs">
+      <DependentUpon>CreateOrderWindow.xaml</DependentUpon>
+    </Compile>
     <Page Include="Dictionary.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -121,6 +127,14 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Windows\CreateCarWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\CreateClientServiceWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\CreateOrderWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

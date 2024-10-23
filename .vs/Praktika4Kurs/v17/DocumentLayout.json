@@ -3,16 +3,12 @@
   "WorkspaceRootPath": "C:\\MyProgramms\\kursa4\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{BAE477F8-DD2A-454B-8084-BE0B3D72C328}|Praktika4Kurs.csproj|c:\\myprogramms\\kursa4\\pages\\clientpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BAE477F8-DD2A-454B-8084-BE0B3D72C328}|Praktika4Kurs.csproj|solutionrelative:pages\\clientpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BAE477F8-DD2A-454B-8084-BE0B3D72C328}|Praktika4Kurs.csproj|c:\\myprogramms\\kursa4\\windows\\createclientservicewindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{BAE477F8-DD2A-454B-8084-BE0B3D72C328}|Praktika4Kurs.csproj|solutionrelative:windows\\createclientservicewindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BAE477F8-DD2A-454B-8084-BE0B3D72C328}|Praktika4Kurs.csproj|C:\\MyProgramms\\kursa4\\pages\\adminpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{BAE477F8-DD2A-454B-8084-BE0B3D72C328}|Praktika4Kurs.csproj|solutionrelative:pages\\adminpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BAE477F8-DD2A-454B-8084-BE0B3D72C328}|Praktika4Kurs.csproj|c:\\myprogramms\\kursa4\\pages\\adminpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BAE477F8-DD2A-454B-8084-BE0B3D72C328}|Praktika4Kurs.csproj|solutionrelative:pages\\adminpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BAE477F8-DD2A-454B-8084-BE0B3D72C328}|Praktika4Kurs.csproj|c:\\myprogramms\\kursa4\\windows\\createclientservicewindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BAE477F8-DD2A-454B-8084-BE0B3D72C328}|Praktika4Kurs.csproj|solutionrelative:windows\\createclientservicewindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -27,39 +23,26 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "ClientPage.xaml.cs",
-              "DocumentMoniker": "C:\\MyProgramms\\kursa4\\Pages\\ClientPage.xaml.cs",
-              "RelativeDocumentMoniker": "Pages\\ClientPage.xaml.cs",
-              "ToolTip": "C:\\MyProgramms\\kursa4\\Pages\\ClientPage.xaml.cs",
-              "RelativeToolTip": "Pages\\ClientPage.xaml.cs",
-              "ViewState": "AgIAAGIAAAAAAAAAAAAIwIAAAAA+AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-20T16:04:05.069Z",
+              "Title": "CreateClientServiceWindow.xaml",
+              "DocumentMoniker": "C:\\MyProgramms\\kursa4\\Windows\\CreateClientServiceWindow.xaml",
+              "RelativeDocumentMoniker": "Windows\\CreateClientServiceWindow.xaml",
+              "ToolTip": "C:\\MyProgramms\\kursa4\\Windows\\CreateClientServiceWindow.xaml",
+              "RelativeToolTip": "Windows\\CreateClientServiceWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-10-23T15:15:12.765Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "AdminPage.xaml",
-              "DocumentMoniker": "C:\\MyProgramms\\kursa4\\Pages\\AdminPage.xaml",
-              "RelativeDocumentMoniker": "Pages\\AdminPage.xaml",
-              "ToolTip": "C:\\MyProgramms\\kursa4\\Pages\\AdminPage.xaml",
-              "RelativeToolTip": "Pages\\AdminPage.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-10-17T18:23:50.977Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "AdminPage.xaml.cs",
-              "DocumentMoniker": "C:\\MyProgramms\\kursa4\\Pages\\AdminPage.xaml.cs",
-              "RelativeDocumentMoniker": "Pages\\AdminPage.xaml.cs",
-              "ToolTip": "C:\\MyProgramms\\kursa4\\Pages\\AdminPage.xaml.cs",
-              "RelativeToolTip": "Pages\\AdminPage.xaml.cs",
-              "ViewState": "AgIAAAABAAAAAAAAAAAwwOoAAAAAAAAAAAAAAA==",
+              "Title": "CreateClientServiceWindow.xaml.cs",
+              "DocumentMoniker": "C:\\MyProgramms\\kursa4\\Windows\\CreateClientServiceWindow.xaml.cs",
+              "RelativeDocumentMoniker": "Windows\\CreateClientServiceWindow.xaml.cs",
+              "ToolTip": "C:\\MyProgramms\\kursa4\\Windows\\CreateClientServiceWindow.xaml.cs",
+              "RelativeToolTip": "Windows\\CreateClientServiceWindow.xaml.cs",
+              "ViewState": "AgIAACQAAAAAAAAAAAAAwEUAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-17T18:23:48.983Z",
+              "WhenOpened": "2024-10-23T15:15:12.046Z",
               "EditorCaption": ""
             }
           ]

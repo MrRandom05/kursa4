@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.Data.Entity;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -19,6 +20,7 @@ namespace Praktika4Kurs.Entities
         {
             get
             {
+                Navigator.db.Details.Load();
                 string res = "";
                 var order = Navigator.db.DetailsOrders.Include("OrderDetails").First(x => x.DetailsOrderId == DetailsOrderId);
                 foreach (var item in order.OrderDetails)

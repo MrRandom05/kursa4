@@ -1,0 +1,25 @@
+﻿<Window x:Class="Praktika4Kurs.Windows.CreateClientServiceWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Praktika4Kurs.Windows"
+        mc:Ignorable="d"
+        Title="CreateClientServiceWindow" Height="400" Width="300">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Row="0" HorizontalAlignment="Center" Margin="0,20,0,0">
+            <Label Content="Машина" FontSize="16" />
+            <ComboBox x:Name="CarsCB" Width="150" Height="30" FontSize="16" Loaded="LoadCars" SelectedValue="{Binding CarNumber}" SelectedValuePath="CarNumber" DisplayMemberPath="CarNumber" />
+        </StackPanel>
+        <StackPanel Grid.Row="1" HorizontalAlignment="Center" Margin="0,20,0,0">
+            <Label Content="Услуга" FontSize="16" />
+            <ComboBox x:Name="ServicesCB" Width="150" Height="30" FontSize="16" Loaded="LoadServiceList" SelectedValue="{Binding ServiceName}" SelectedValuePath="ServiceName" DisplayMemberPath="ServiceName" />
+        </StackPanel>
+        <Button Content="Создать" Width="120" Height="30" FontSize="16" Grid.Row="2" Click="CreateService" />
+    </Grid>
+</Window>
